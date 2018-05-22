@@ -3,8 +3,18 @@ from tkinter import ttk
 
 root = Tk()
 
-root.title("First GUI")
+frame = Frame(root)
 
-ttk.Button(root, text="Hello TkInter").grid()
+labelText = StringVar()
+
+label = Label(frame, textvariable =labelText)
+
+button = Button(frame, text="Click Me")
+
+labelText.set("I am a label")
+
+label.pack()
+button.pack()
+frame.pack()
 
 root.mainloop()

@@ -14,4 +14,8 @@ Radiobutton(root, text="Good", value=2).grid(row=3, column=0, sticky=W)
 Radiobutton(root, text="Poor", value=3).grid(row=4, column=0, sticky=W)
 Radiobutton(root, text="Damaged", value=4).grid(row=5, column=0, sticky=W)
 
+Label(root, text="Benefits").grid(row=1, column=1, sticky=W)
+Checkbutton(root, text="Free Shipping").grid(row=2, column=1, sticky=W)
+Checkbutton(root, text="Bonus Gift").grid(row=3, column=1, sticky=W)
+
 root.mainloop()

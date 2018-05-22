@@ -5,16 +5,12 @@ root = Tk()
 
 frame = Frame(root)
 
-labelText = StringVar()
+Label(frame, text="A Bunch of Buttons").pack()
 
-label = Label(frame, textvariable =labelText)
+Button(frame, text="B1").pack(side=LEFT, fill=Y)
+Button(frame, text="B2").pack(side=TOP, fill=X)
+Button(frame, text="B3").pack(side=RIGHT, fill=X)
+Button(frame, text="B4").pack(side=LEFT, fill=X)
 
-button = Button(frame, text="Click Me")
-
-labelText.set("I am a label")
-
-label.pack()
-button.pack()
 frame.pack()
-
 root.mainloop()

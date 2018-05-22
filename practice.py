@@ -3,14 +3,12 @@ from tkinter import ttk
 
 root = Tk()
 
-frame = Frame(root)
+Label(root, text="First Name").grid(row=0, sticky=W, padx=4)
+Entry(root).grid(row=0, column=1, sticky=E, pady=4)
 
-Label(frame, text="A Bunch of Buttons").pack()
+Label(root, text="Last Name").grid(row=1, sticky=W, padx=4)
+Entry(root).grid(row=1, column=1, sticky=E, pady=4)
 
-Button(frame, text="B1").pack(side=LEFT, fill=Y)
-Button(frame, text="B2").pack(side=TOP, fill=X)
-Button(frame, text="B3").pack(side=RIGHT, fill=X)
-Button(frame, text="B4").pack(side=LEFT, fill=X)
+Button(root, text="Submit").grid(row=3)
 
-frame.pack()
 root.mainloop()
